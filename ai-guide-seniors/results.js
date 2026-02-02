@@ -127,9 +127,9 @@ function generateResults(data) {
         `;
         
         html += `
-                <a href="tel:+15551234567" class="contact-btn">
+                <a href="tel:+16033708578" class="contact-btn">
                     <span class="icon">📞</span>
-                    Call Cliff: (555) 123-4567
+                    Call Cliff: (603) 370-8578
                 </a>
             `;
         
@@ -167,7 +167,7 @@ function generateResults(data) {
                 <div class="contact-methods">
         `;
         
-        html += `<a href="tel:+15551234567" class="contact-btn"><span class="icon">📞</span> Call Cliff</a>`;
+        html += `<a href="tel:+16033708578" class="contact-btn"><span class="icon">📞</span> Call Cliff</a>`;
         
         if (data.email) {
             html += `<a href="mailto:calmaihelp@gmail.com?subject=AI Help Question&body=Hi Cliff,%0D%0A%0D%0AMy name: ${encodeURIComponent(data.name)}%0D%0AMy email: ${encodeURIComponent(data.email)}${data.phone ? '%0D%0AMy phone: ' + encodeURIComponent(data.phone) : ''}" class="contact-btn"><span class="icon">✉️</span> Email Cliff</a>`;
