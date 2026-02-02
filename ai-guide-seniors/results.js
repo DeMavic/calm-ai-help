@@ -126,20 +126,18 @@ function generateResults(data) {
                 <div class="contact-methods">
         `;
         
-        if (data.phone) {
-            html += `
-                <a href="tel:${data.phone}" class="contact-btn">
+        html += `
+                <a href="tel:+15551234567" class="contact-btn">
                     <span class="icon">📞</span>
-                    Call: ${data.phone}
+                    Call Cliff: (555) 123-4567
                 </a>
             `;
-        }
         
         if (data.email) {
             html += `
-                <a href="mailto:${data.email}?subject=AI Help - Ready to Get Started" class="contact-btn">
+                <a href="mailto:calmaihelp@gmail.com?subject=AI Help - Ready to Get Started&body=Hi Cliff, I just completed the assessment.%0D%0A%0D%0AMy name: ${encodeURIComponent(data.name)}%0D%0AMy email: ${encodeURIComponent(data.email)}${data.phone ? '%0D%0AMy phone: ' + encodeURIComponent(data.phone) : ''}" class="contact-btn">
                     <span class="icon">✉️</span>
-                    Email: ${data.email}
+                    Email Cliff
                 </a>
             `;
         }
@@ -169,12 +167,10 @@ function generateResults(data) {
                 <div class="contact-methods">
         `;
         
-        if (data.phone) {
-            html += `<a href="tel:${data.phone}" class="contact-btn"><span class="icon">📞</span> Call Cliff</a>`;
-        }
+        html += `<a href="tel:+15551234567" class="contact-btn"><span class="icon">📞</span> Call Cliff</a>`;
         
         if (data.email) {
-            html += `<a href="mailto:${data.email}?subject=AI Help Question" class="contact-btn"><span class="icon">✉️</span> Email Cliff</a>`;
+            html += `<a href="mailto:calmaihelp@gmail.com?subject=AI Help Question&body=Hi Cliff,%0D%0A%0D%0AMy name: ${encodeURIComponent(data.name)}%0D%0AMy email: ${encodeURIComponent(data.email)}${data.phone ? '%0D%0AMy phone: ' + encodeURIComponent(data.phone) : ''}" class="contact-btn"><span class="icon">✉️</span> Email Cliff</a>`;
         }
         
         html += `
