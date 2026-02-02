@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Assessment - Calm AI Help</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assessment.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html" style="color: white; text-decoration: none;">🌊 Calm AI Help</a></h1>
+            <p class="tagline">Let's find the best way to help you</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="assessment-intro">
+            <h2>Quick Assessment</h2>
+            <p>Answer a few simple questions so we can give you personalized help. Take your time—there are no wrong answers!</p>
+        </section>
+
+        <form id="assessmentForm" class="assessment-form">
+            <!-- Section 1: What do you have? -->
+            <div class="form-section">
+                <h3>1. What AI devices or services do you already have?</h3>
+                <p class="help-text">Check all that apply. Don't worry if you're not sure!</p>
+                
+                <label class="checkbox-option">
+                    <input type="checkbox" name="devices" value="smartphone">
+                    <span>📱 Smartphone (iPhone or Android)</span>
+                </label>
+                
+                <label class="checkbox-option">
+                    <input type="checkbox" name="devices" value="alexa">
+                    <span>🔊 Amazon Alexa (Echo device)</span>
+                </label>
+                
+                <label class="checkbox-option">
+                    <input type="checkbox" name="devices" value="google-home">
+                    <span>🏠 Google Home / Google Assistant</span>
+                </label>
+                
+                <label class="checkbox-option">
+                    <input type="checkbox" name="devices" value="siri">
+                    <span>🍎 Apple Siri (iPhone, iPad, or HomePod)</span>
+                </label>
+                
+                <label class="checkbox-option">
+                    <input type="checkbox" name="devices" value="computer">
+                    <span>💻 Computer (laptop or desktop)</span>
+                </label>
+                
+                <label class="checkbox-option">
+                    <input type="checkbox" name="devices" value="none">
+                    <span>❌ None of these / Not sure</span>
+                </label>
+            </div>
+
+            <!-- Section 2: What do you want to do? -->
+            <div class="form-section">
+                <h3>2. What would you like AI to help you with?</h3>
+                <p class="help-text">Check all that interest you</p>
+                
+                <label class="checkbox-option">
+                    <input type="checkbox" name="goals" value="answers">
+                    <span>💬 Get quick answers to questions</span>
+                </label>
+                
+                <label class="checkbox-option">
+                    <input type="checkbox" name="goals" value="smart-home">
+                    <span>🏠 Control lights, temperature, or other smart home devices</span>
+                </label>
+                
+                <label class="checkbox-option">
+                    <input type="checkbox" name="goals" value="communication">
+                    <span>📞 Make calls, send messages, or video chat with family</span>
+                </label>
+                
+                <label class="checkbox-option">
+                    <input type="checkbox" name="goals" value="entertainment">
+                    <span>🎵 Play music, podcasts, or audiobooks</span>
+                </label>
+                
+                <label class="checkbox-option">
+                    <input type="checkbox" name="goals" value="learning">
+                    <span>📚 Learn about recipes, hobbies, health, or news</span>
+                </label>
+                
+                <label class="checkbox-option">
+                    <input type="checkbox" name="goals" value="reminders">
+                    <span>⏰ Set reminders and manage my schedule</span>
+                </label>
+                
+                <label class="checkbox-option">
+                    <input type="checkbox" name="goals" value="explore">
+                    <span>🔍 Just exploring what's possible</span>
+                </label>
+            </div>
+
+            <!-- Section 3: Comfort level -->
+            <div class="form-section">
+                <h3>3. How comfortable are you with technology?</h3>
+                <p class="help-text">Be honest—this helps us know how much detail to provide</p>
+                
+                <label class="radio-option">
+                    <input type="radio" name="comfort" value="beginner" required>
+                    <span>
+                        <strong>Just starting out</strong><br>
+                        I'm new to most technology and prefer simple, step-by-step help
+                    </span>
+                </label>
+                
+                <label class="radio-option">
+                    <input type="radio" name="comfort" value="intermediate">
+                    <span>
+                        <strong>Somewhat comfortable</strong><br>
+                        I can do basic things, but sometimes get stuck and need guidance
+                    </span>
+                </label>
+                
+                <label class="radio-option">
+                    <input type="radio" name="comfort" value="advanced">
+                    <span>
+                        <strong>Pretty comfortable</strong><br>
+                        I'm good with most tech—I just want to learn about AI specifically
+                    </span>
+                </label>
+            </div>
+
+            <!-- Section 4: Preferred help method -->
+            <div class="form-section">
+                <h3>4. How would you prefer to get help?</h3>
+                <p class="help-text">Choose what sounds most comfortable to you</p>
+                
+                <label class="radio-option">
+                    <input type="radio" name="help-method" value="self-guided" required>
+                    <span>
+                        <strong>Written guides I can follow at my own pace</strong><br>
+                        Step-by-step instructions with pictures
+                    </span>
+                </label>
+                
+                <label class="radio-option">
+                    <input type="radio" name="help-method" value="phone">
+                    <span>
+                        <strong>Phone call with a real person</strong><br>
+                        Talk through it together over the phone
+                    </span>
+                </label>
+                
+                <label class="radio-option">
+                    <input type="radio" name="help-method" value="video">
+                    <span>
+                        <strong>Video call (like Zoom or FaceTime)</strong><br>
+                        See each other and share screens if needed
+                    </span>
+                </label>
+                
+                <label class="radio-option">
+                    <input type="radio" name="help-method" value="combination">
+                    <span>
+                        <strong>A mix of written guides and personal help</strong><br>
+                        Start with guides, call if I get stuck
+                    </span>
+                </label>
+            </div>
+
+            <!-- Section 5: Contact info -->
+            <div class="form-section">
+                <h3>5. How can we reach you?</h3>
+                <p class="help-text">So we can send your personalized recommendations and schedule help if needed</p>
+                
+                <div class="input-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="John Smith">
+                </div>
+                
+                <div class="input-group">
+                    <label for="email">Email Address (optional)</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com">
+                </div>
+                
+                <div class="input-group">
+                    <label for="phone">Phone Number (optional)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                </div>
+                
+                <p class="privacy-note">
+                    🔒 We'll never share your information. We'll only use it to help you with AI.
+                </p>
+            </div>
+
+            <!-- Section 6: Anything else? -->
+            <div class="form-section">
+                <h3>6. Anything else we should know?</h3>
+                <p class="help-text">Optional—any questions, concerns, or specific things you'd like help with?</p>
+                
+                <textarea 
+                    name="notes" 
+                    id="notes" 
+                    rows="4" 
+                    placeholder="Example: I have trouble seeing small text, or I'm worried about privacy, or I want to learn how to video chat with my grandkids..."
+                ></textarea>
+            </div>
+
+            <!-- Submit -->
+            <div class="form-section submit-section">
+                <button type="submit" class="btn-primary">Get My Personalized Recommendations</button>
+                <p class="submit-note">This will take you to your results page</p>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Questions? <a href="index.html">Back to home</a></p>
+            <p class="footer-note">Built with care by Cliff Wilson</p>
+        </div>
+    </footer>
+
+    <script src="assessment.js"></script>
+</body>
+</html>

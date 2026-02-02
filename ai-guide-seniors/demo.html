@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try AI - Calm AI Help</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html" style="color: white; text-decoration: none;">🌊 Calm AI Help</a></h1>
+            <p class="tagline">Try talking to AI—it's safe and easy!</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="demo-intro">
+            <h2>Interactive AI Demo</h2>
+            <p>This is a safe space to try talking to an AI assistant. Ask it anything! There are no wrong questions.</p>
+            <div class="demo-tips">
+                <div class="tip">💡 Be specific with your questions</div>
+                <div class="tip">🔒 Don't share passwords or sensitive info</div>
+                <div class="tip">✨ Try the example questions below!</div>
+            </div>
+        </section>
+
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="chat-status">
+                    <span class="status-dot"></span>
+                    <span id="statusText">AI Assistant ready to help</span>
+                </div>
+                <div class="ai-mode-toggle">
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="aiModeToggle">
+                        <span class="toggle-slider"></span>
+                    </label>
+                    <span class="toggle-label">
+                        <span id="modeLabel">Demo Mode</span>
+                        <span class="mode-hint" id="modeHint">Using pre-written responses</span>
+                    </span>
+                </div>
+            </div>
+
+            <div id="chatMessages" class="chat-messages">
+                <div class="message assistant">
+                    <div class="message-content">
+                        <p>Hello! 👋 I'm here to help you learn about AI. Feel free to ask me anything!</p>
+                        <p>Not sure what to ask? Try clicking one of the example questions below, or just type your own question.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="example-questions">
+                <p class="examples-label">Try these questions:</p>
+                <div class="example-buttons">
+                    <button class="example-btn" data-question="What is AI in simple terms?">What is AI?</button>
+                    <button class="example-btn" data-question="How can AI help me in my daily life?">How can AI help me?</button>
+                    <button class="example-btn" data-question="Give me a simple recipe for chocolate chip cookies">Cookie recipe</button>
+                    <button class="example-btn" data-question="What are some good exercises for seniors?">Senior exercises</button>
+                    <button class="example-btn" data-question="How do I video call my family?">Video calling</button>
+                    <button class="example-btn" data-question="Explain what a podcast is">What's a podcast?</button>
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <form id="chatForm">
+                    <input 
+                        type="text" 
+                        id="userInput" 
+                        placeholder="Type your question here..." 
+                        autocomplete="off"
+                        maxlength="500"
+                    >
+                    <button type="submit" id="sendBtn">
+                        <span>Send</span>
+                        <span class="send-icon">➤</span>
+                    </button>
+                </form>
+                <p class="input-hint">Press Enter to send</p>
+            </div>
+        </div>
+
+        <section class="demo-disclaimer">
+            <h3>About This Demo</h3>
+            <p>This AI assistant uses similar technology to ChatGPT and other popular AI tools. It's designed to be helpful and informative, but remember:</p>
+            <ul>
+                <li>AI can make mistakes—always verify important information</li>
+                <li>Don't share personal information like passwords, credit cards, or social security numbers</li>
+                <li>For medical, legal, or financial advice, always consult a professional</li>
+                <li>This is a learning tool—feel free to experiment!</li>
+            </ul>
+        </section>
+
+        <section class="next-steps-cta">
+            <h2>Like what you see?</h2>
+            <p>Imagine having this kind of help available on your phone, smart speaker, or computer anytime you need it!</p>
+            <div class="cta-buttons">
+                <a href="assessment.html" class="btn-primary">Take the Assessment</a>
+                <a href="contact.html" class="btn-secondary">Get Personal Help</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p><a href="index.html">Back to home</a> | <a href="contact.html">Contact us</a></p>
+            <p class="footer-note">Built with care by Cliff Wilson</p>
+        </div>
+    </footer>
+
+    <script src="demo.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Calm AI Help</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html" style="color: white; text-decoration: none;">🌊 Calm AI Help</a></h1>
+            <p class="tagline">We're here to help</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="contact-intro">
+            <h2>Get in Touch</h2>
+            <p>Have questions? Need help? Want to schedule a session? We'd love to hear from you!</p>
+        </section>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="icon">📞</div>
+                <h3>Call</h3>
+                <p>Prefer to talk? Give us a call!</p>
+                <a href="tel:+15551234567" class="contact-link">(555) 123-4567</a>
+                <p class="availability">Available Mon-Fri, 9 AM - 5 PM EST</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="icon">✉️</div>
+                <h3>Email</h3>
+                <p>Send us a message anytime.</p>
+                <a href="mailto:calmaihelp@gmail.com" class="contact-link">calmaihelp@gmail.com</a>
+                <p class="availability">We respond within 24 hours</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="icon">💬</div>
+                <h3>Chat</h3>
+                <p>Try our interactive AI demo!</p>
+                <a href="demo.html" class="contact-link">Start Demo</a>
+                <p class="availability">See what AI can do for you</p>
+            </div>
+        </div>
+
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <p>Fill out this form and we'll get back to you as soon as possible.</p>
+            
+            <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="John Smith">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number (optional)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">What can we help you with? *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Choose an option...</option>
+                        <option value="general">General question</option>
+                        <option value="device-help">Help with a specific device</option>
+                        <option value="schedule">Schedule a call or video session</option>
+                        <option value="follow-up">Follow up on my assessment</option>
+                        <option value="technical">Technical support</option>
+                        <option value="other">Something else</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message *</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Tell us what you need help with..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-preference">Preferred contact method</label>
+                    <select id="contact-preference" name="contactPreference">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone call</option>
+                        <option value="either">Either is fine</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-primary">Send Message</button>
+                <p class="form-note">We'll respond within 24 hours</p>
+            </form>
+
+            <div id="formSuccess" class="success-message" style="display: none;">
+                <div class="icon">✅</div>
+                <h3>Message Sent!</h3>
+                <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h3>Do you charge for help?</h3>
+                <p>Our initial consultation is always free! If you need ongoing support, we'll discuss affordable options that work for you.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>I'm not very tech-savvy. Can you still help me?</h3>
+                <p>Absolutely! That's exactly who we're here for. We explain everything in simple terms and go at your pace.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can you help me set up my devices remotely?</h3>
+                <p>Yes! We can walk you through setup over the phone or video call. For some things, an in-person visit might be better—we'll figure out what works best for you.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What areas do you serve?</h3>
+                <p>We can help anyone remotely via phone or video. For in-person visits, we serve [your local area].</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What if I need help after our session?</h3>
+                <p>We're always here! You can call or email anytime with follow-up questions.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p><a href="index.html">Back to home</a> | <a href="assessment.html">Take the assessment</a></p>
+            <p class="footer-note">Built with care by Cliff Wilson</p>
+        </div>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+/* Contact page styles */
+
+.contact-intro {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.contact-intro h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.contact-intro p {
+    font-size: 1.2em;
+    color: #5a6c7d;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.contact-card {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.contact-card .icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    color: #5a6c7d;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.contact-link {
+    display: inline-block;
+    color: #667eea;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 15px 0;
+    padding: 10px 20px;
+    border: 2px solid #667eea;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.contact-link:hover {
+    background: #667eea;
+    color: white;
+}
+
+.availability {
+    font-size: 0.95em !important;
+    color: #7f8c8d !important;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Contact form */
+.contact-form-section {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form-section h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.contact-form-section > p {
+    color: #5a6c7d;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.05em;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.form-group textarea {
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.form-note {
+    text-align: center;
+    margin-top: 15px;
+    color: #7f8c8d;
+    font-size: 1em;
+    font-style: italic;
+}
+
+.success-message {
+    text-align: center;
+    padding: 40px;
+    background: #e8f5e9;
+    border-radius: 12px;
+    border: 2px solid #4caf50;
+    margin-top: 30px;
+}
+
+.success-message .icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.success-message h3 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.success-message p {
+    color: #2c3e50;
+    font-size: 1.15em;
+}
+
+/* FAQ section */
+.faq-section {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.faq-section h2 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.faq-item h3 {
+    color: #667eea;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    color: #5a6c7d;
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form-section,
+    .faq-section {
+        padding: 25px 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
