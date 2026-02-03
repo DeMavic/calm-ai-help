@@ -198,7 +198,9 @@ function getDeviceLabel(device) {
         'alexa': 'Amazon Alexa',
         'google-home': 'Google Home',
         'siri': 'Apple Siri',
-        'computer': 'Computer'
+        'computer': 'Computer',
+        'ring': 'Ring Doorbell',
+        'nest': 'Nest Thermostat'
     };
     return labels[device] || device;
 }
@@ -265,6 +267,18 @@ function getDeviceGuide(device, goals) {
             description: 'Your computer can access powerful AI tools. We\'ll show you how to use ChatGPT, search smarter, and get help with tasks.',
             link: 'guides/computer-ai.html',
             linkText: 'View computer AI guide'
+        },
+        'ring': {
+            title: 'Getting Started with Ring Doorbell',
+            description: 'See who\'s at your door from anywhere! Learn how to view live video, talk to visitors, and get alerts on your phone when someone rings.',
+            link: 'guides/ring-doorbell.html',
+            linkText: 'View Ring doorbell guide'
+        },
+        'nest': {
+            title: 'Mastering Your Nest Thermostat',
+            description: 'Control your home temperature from anywhere, use voice commands, and let Nest learn your schedule to save energy automatically.',
+            link: 'guides/nest-thermostat.html',
+            linkText: 'View Nest thermostat guide'
         }
     };
     
